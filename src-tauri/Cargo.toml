@@ -1,5 +1,5 @@
 [package]
-name = "syndix-app"
+name = "syndix"
 version = "0.1.0"
 description = "Syndix als Desktop-App"
 edition = "2021"
