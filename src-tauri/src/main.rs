@@ -22,10 +22,16 @@ fn main() {
             let popup_handle = app.handle().clone();
             let start: Url = START_URL.parse().unwrap();
 
-            WebviewWindowBuilder::new(app, "main", WebviewUrl::External(start))
+            let mut builder = WebviewWindowBuilder::new(app, "main", WebviewUrl::External(start))
                 .title("Syndix")
                 .inner_size(1280.0, 800.0)
-                .resizable(true)
+                .resizable(true);
+
+            if let Ok(base) = app.path().local_data_dir() {
+                builder = builder.data_directory(base.join("SyndixData"));
+            }
+
+            builder
                 .on_navigation(move |url| {
                     if is_allowed(url) {
                         true
