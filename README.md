@@ -49,4 +49,4 @@ Syndix-App/
 
 ## Hinweis
 
-Die App ist ein dünner Wrapper ohne eigene Logik. Die eigentliche Funktionalität liegt serverseitig in der Web-App (`Syndix-Next`).
+Die App ist ein dünner Wrapper ohne eigene Logik. Die eigentliche Funktionalität liegt serverseitig in der Web-App.
