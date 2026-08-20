@@ -1,4 +1,4 @@
-# Syndix-Desktop-App
+# Syndix-App
 
 Tauri-basierte Windows-App, die die Syndix-Web-App (`https://syndix.tijay006.de/os/teams`) in einem nativen WebView2-Fenster darstellt – die Website „als App".
 
